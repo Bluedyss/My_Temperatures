@@ -1,4 +1,4 @@
-#include <My_temperature.h>
+#include <My_Temperature.h>
 
 // Define the pins for each sensor
 #define NTC_PIN A0       // Pin for the NTC sensor
