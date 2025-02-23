@@ -4,8 +4,8 @@ This library provides a simple way to interface with different types of temperat
 
 ## Installation
 
-1. Download the `My_temperature` folder.
-2. Copy the `My_temperature` folder to your Arduino libraries directory (`Documents/Arduino/libraries`).
+1. Download the `My_Temperature` folder.
+2. Copy the `My_Temperature` folder to your Arduino libraries directory (`Documents/Arduino/libraries`).
 3. Open the Arduino IDE and restart it.
 
 ## Example Sketch
