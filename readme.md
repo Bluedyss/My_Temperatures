@@ -4,8 +4,8 @@ This library provides a simple way to interface with different types of temperat
 
 ## Installation
 
-1. Download the `My_Temperature` folder.
-2. Copy the `My_Temperature` folder to your Arduino libraries directory (`Documents/Arduino/libraries`).
+1. Download the `My_temperature` folder.
+2. Copy the `My_temperature` folder to your Arduino libraries directory (`Documents/Arduino/libraries`).
 3. Open the Arduino IDE and restart it.
 
 ## Example Sketch
@@ -14,11 +14,13 @@ The example sketch (`example.ino`) demonstrates how to read temperatures from va
 
 ### Pin Definitions:
 
-- **NTC** sensor is connected to **A0**
-- **PTC** sensor is connected to **A1**
-- **PT100** sensor is connected to **A2**
-- **PT1000** sensor is connected to **A3**
-- **KTY** sensor is connected to **A4**
+- **NTC** sensor
+- **PTC** sensor
+- **PT100** sensor
+- **PT1000** sensor
+- **KTY** sensor
+
+You can assign the sensors to any analog input pins you prefer, as shown in the example sketch.
 
 ## Sensor Parameters
 
@@ -27,7 +29,7 @@ Each sensor has parameters that can be configured:
 - **Temperature coefficient** for PT100 and PT1000 sensors
 - **Correction factor** for KTY sensors
 
-Example configuration for sensors:
+### Example configuration for sensors:
 
 ```cpp
 ntcSensor.setBeta(3950);  // Beta value for NTC
