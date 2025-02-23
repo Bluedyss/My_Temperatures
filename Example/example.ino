@@ -23,6 +23,14 @@ void setup() {
     pt100Sensor.setTemperatureCoefficient(0.00385);  // Coefficient for PT100
     pt1000Sensor.setTemperatureCoefficient(0.00385); // Coefficient for PT1000
     ktySensor.setKtyCorrectionFactor(1.1);  // Correction factor for KTY
+    
+    // Set voltage divider for sensors
+    ntcSensor.setReferenceResistance(10000); // Reference resistance for NTC sensor (10kΩ typical)
+    ptcSensor.setReferenceResistance(10000); // Reference resistance for PTC sensor (10kΩ typical)
+    pt100Sensor.setReferenceResistance(100);  // Reference resistance for PT100 sensor (100Ω typical)
+    pt1000Sensor.setReferenceResistance(1000); // Reference resistance for PT1000 sensor (1000Ω typical)
+    ktySensor.setReferenceResistance(10000);  // Reference resistance for KTY sensor (10kΩ typical)
+
 }
 
 void loop() {
